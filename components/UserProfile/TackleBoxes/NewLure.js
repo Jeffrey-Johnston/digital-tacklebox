@@ -1,5 +1,3 @@
-import { loadGetInitialProps } from "next/dist/next-server/lib/utils";
-
 const NewLure = () => {
   const submitFormHandler = (e) => {
     e.preventDefault();

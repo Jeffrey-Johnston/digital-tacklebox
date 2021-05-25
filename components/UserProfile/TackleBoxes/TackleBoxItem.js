@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import "../../UI/Card.module.css";
 
-const TackleBoxItem = (props) => {
+const TackleBoxItem = () => {
   const router = useRouter();
 
   const viewItemDetailsHandler = () => {
@@ -9,7 +9,7 @@ const TackleBoxItem = (props) => {
     router.push("/user-profile/tackle-boxes/tackle-boxId/lureId");
   };
 
-  return <li onClick={viewItemDetailsHandler}>{props.tackleBox}</li>;
+  return <li onClick={viewItemDetailsHandler}></li>;
 };
 
 export default TackleBoxItem;
